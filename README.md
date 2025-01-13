@@ -1,22 +1,42 @@
-# MNIST Digit Classification with Neural Network
+# MNIST Digit Classification using Neural Networks
 
-This project demonstrates how to train a neural network model using the MNIST dataset for handwritten digit classification. The model is built using TensorFlow and Keras, with evaluation methods like accuracy, confusion matrix, and accuracy per class visualization.
+This repository contains a deep learning model built with **TensorFlow** and **Keras** to classify handwritten digits from the **MNIST** dataset. The model is trained using a simple neural network architecture, evaluated with accuracy metrics, and visualized using confusion matrices and other graphical representations.
 
-## Project Structure
+## Overview
 
-- **mnist_classifier.py**: Python script containing the implementation of the model.
-- **README.md**: This file containing the project description and instructions.
-- **requirements.txt**: List of required dependencies for the project.
+The **MNIST** dataset is a collection of 70,000 images of handwritten digits (0–9) used for training and testing image classification models. This project demonstrates the following:
 
-## Requirements
+- Loading and preprocessing the MNIST dataset.
+- Building a feedforward neural network using **TensorFlow** and **Keras**.
+- Evaluating the model's performance with various metrics.
+- Visualizing the results with **Matplotlib** and **Seaborn**.
 
-To run this project, you need to install the following dependencies:
+## Features
 
-- `tensorflow` for building and training the neural network.
-- `numpy` for numerical computations.
-- `matplotlib` for plotting the results.
-- `seaborn` for enhanced visualizations.
-- `scikit-learn` for generating confusion matrices.
+- **Model Architecture**: A simple neural network with fully connected layers.
+- **Training**: 5 epochs of training using the Adam optimizer and categorical crossentropy loss.
+- **Evaluation**: Test accuracy and per-class accuracy calculations.
+- **Visualization**: 
+    - Confusion matrix heatmap to visualize true vs. predicted labels.
+    - Accuracy per digit class bar chart.
+    - Displaying sample test images with predicted vs. true labels.
+
+
+## Installation
+
+### Prerequisites
+
+To run this project, you need Python (3.6 or higher) installed. The following Python libraries are required:
+
+- **TensorFlow**: For building and training the neural network model.
+- **NumPy**: For numerical operations and array manipulation.
+- **Matplotlib**: For plotting and visualizing data.
+- **Seaborn**: For enhanced visualization, particularly confusion matrices.
+- **scikit-learn**: For computing the confusion matrix and additional metrics.
+
+### Install Dependencies
+
+You can install all dependencies using the following command:
 
 You can install them using `pip`:
 
